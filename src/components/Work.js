@@ -1,19 +1,19 @@
 import React, { useState, useEffect } from 'react';
 import { FaAngleDoubleRight } from 'react-icons/fa';
-const Experience = ({experiences}) => {
+const Work = ({work}) => {
 	const [value, setValue] = useState(0);
 
-	const { company, dates, duties, title } = experiences[value];
+	const { company, dates, duties, title } = work[value];
 	return (
 		<section className='section'>
 			<div className='title'>
-				<h2>Experience</h2>
+				<h2>Work</h2>
 				<div className='underline'></div>
 			</div>
-			<div className='experiences-center'>
+			<div className='jobs-center'>
 				{/* tabs container */}
 				<div className='btn-container'>
-					{experiences.map((item, index) => {
+					{work.map((item, index) => {
 						return (
 							<button
 								key={item.id}
@@ -27,8 +27,8 @@ const Experience = ({experiences}) => {
 				</div>
 				{/* job info */}
 				<article className='job-info'>
-					<h2>{title}</h2>
-					<h4>{company}</h4>
+					<h4>{title}</h4>
+					<h6>{company}</h6>
 					<p className='job-date'>{dates}</p>
 					{duties.map((duty, index) => {
 						return (
@@ -44,4 +44,4 @@ const Experience = ({experiences}) => {
 	);
 }
 
-export default Experience;
+export default Work;

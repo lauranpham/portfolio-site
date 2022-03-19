@@ -11,9 +11,12 @@ const Contact = () => {
     // todo: handle form submit
   }
   return (
-    <div className="contact">
-      <h1>Contact</h1>
-      <form onSubmit={handleSubmit}>
+    <section className='section'>
+      <div className='title'>
+				<h2>Contact</h2>
+				<div className='underline'></div>
+			</div>
+      <form onSubmit={handleSubmit} className="contact-form">
         <input
             type='text'
             value={name}
@@ -39,7 +42,7 @@ const Contact = () => {
             submit
           </button>
         </form>
-    </div>
+    </section>
   );
 };
 

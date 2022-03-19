@@ -5,13 +5,13 @@ import { social } from './data';
 
 const Navbar = ({links, setSelectedPage, selectedPage}) => {
   return (
-    <div className="btn-container">
+    <div className="nav-btn-container">
     {links.map((item, index) => {
       return (
         <button
           key={item.id}
           onClick={() => setSelectedPage(index)}
-          className={`job-btn ${index === selectedPage && 'active-btn'}`}
+          className={`nav-btn ${index === selectedPage && 'active-btn'}`}
         >
           {item.text}
         </button>

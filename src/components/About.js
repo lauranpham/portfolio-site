@@ -2,11 +2,16 @@ import React from 'react';
 
 const About = ({bio, image}) => {
   return (
-    <div className="about">
-      <h1>About Me</h1>
-      <p>{bio}</p>
-      <img src={image} alt="Profile Photo" />
-    </div>
+    <section className="section about">
+      <div className='title'>
+				<h2>About</h2>
+				<div className='underline'></div>
+			</div>
+      <div className="content">
+        <p>{bio}</p>
+        <img src={image} alt="Profile Photo" />
+      </div>
+    </section>
   );
 };
 

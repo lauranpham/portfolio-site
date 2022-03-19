@@ -2,7 +2,7 @@ import React from 'react';
 import { FaBehance, FaGithub, FaLinkedin, FaHome, FaInstagram } from 'react-icons/fa';
 import Intro from './Intro';
 import About from './About';
-import Experience from './Experience';
+import Work from './Work';
 import Testimonials from './Testimonials';
 import Projects from './Projects';
 import Contact from './Contact';
@@ -13,20 +13,20 @@ export const projects = [
 		title: 'Sammi',
 		image: './images/sammi.jpg',
 		desc: `Sammi is a supportive app for teachers to support the emotional and social development of their students. `,
-		socials: [
+		links: [
 			{
 				id: 1,
-				title: 'github',
+				type: 'github',
 				url: '',
 			},
 			{
 				id: 2,
-				title: 'website',
+				type: 'website',
 				url: '',
 			},
 			{
 				id: 3,
-				title: 'youtube',
+				type: 'youtube',
 				url: '',
 			},
 		],
@@ -37,20 +37,20 @@ export const projects = [
 		title: 'Furreal',
 		image: './images/furreal.jpg',
 		desc: `Furreal is an online marketplace to hire your next pet best friend! `,
-		socials: [
+		links: [
 			{
 				id: 1,
-				title: 'github',
+				type: 'github',
 				url: '',
 			},
 			{
 				id: 2,
-				title: 'website',
+				type: 'website',
 				url: '',
 			},
 			{
 				id: 3,
-				title: 'youtube',
+				type: 'youtube',
 				url: '',
 			},
 		],
@@ -64,17 +64,17 @@ export const projects = [
 	// 	socials: [
 	// 		{
 	// 			id: 1,
-	// 			title: 'github',
+	// 			type: 'github',
 	// 			url: '',
 	// 		},
 	// 		{
 	// 			id: 2,
-	// 			title: 'website',
+	// 			type: 'website',
 	// 			url: '',
 	// 		},
 	// 		{
 	// 			id: 3,
-	// 			title: 'youtube',
+	// 			type: 'youtube',
 	// 			url: '',
 	// 		},
 	// 	],
@@ -85,20 +85,20 @@ export const projects = [
 		title: 'Mister Cocktail',
 		image: './images/mrcocktail.jpg',
 		desc: `Mister Cocktail is a website for an up and coming bar venue with its drinks menu and prices. `,
-		socials: [
+		links: [
 			{
 				id: 1,
-				title: 'github',
+				type: 'github',
 				url: '',
 			},
 			{
 				id: 2,
-				title: 'website',
+				type: 'website',
 				url: '',
 			},
 			{
 				id: 3,
-				title: 'youtube',
+				type: 'youtube',
 				url: '',
 			},
 		],
@@ -108,29 +108,41 @@ export const projects = [
 
 export const socials = [
 	{
-		id: 3,
-		title: 'linkedin',
+		id: 1,
+		type: 'linkedin',
 		url: 'https://www.linkedin.com/in/laura-pham-641ab462',
 		icon: <FaLinkedin />,
 	},
 	{
 		id: 2,
-		title: 'github',
+		type: 'github',
 		url: 'https://github.com/lauranpham',
 		icon: <FaGithub />,
 	},
 	{
-		id: 2,
-		title: 'instagram',
+		id: 3,
+		type: 'instagram',
 		url: 'https://www.instagram.com/lauracodes_/',
 		icon: <FaInstagram />,
+	},
+	{
+		id: 4,
+		type: 'website',
+		url: '',
+		icon: <FaHome />,
+	},
+	{
+		id: 5,
+		type: 'youtube',
+		url: '',
+		icon: <FaHome />,
 	},
 ];
 
 export const bio =
-	"Hello my name is Laura Pham. I am a driven, meticulous, and quick learning Full Stack Developer with a diverse skill set and experiences working at a London EdTech start-up, Australia's leading marketing operations platform, and Australian & UK education systems. I excel at teamwork, communication, and attention to detail to drive high- quality projects to completion.";
+	"Hello my name is Laura. I am a driven, meticulous, and quick learning Full Stack Developer with a diverse skill set and experiences working at a London EdTech start-up, Australia's leading marketing operations platform, and Australian & UK education systems. I excel at teamwork, communication, and attention to detail to drive high-quality projects to completion.";
 
-export const experiences = [
+export const work = [
 	{
 		id: 'recAGJfiU4CeaV0HL',
 		order: 3,
@@ -210,8 +222,8 @@ export const links = [
 	},
 	{
 		id: 3,
-		text: 'Experience',
-		component: <Experience experiences={experiences} />,
+		text: 'Work',
+		component: <Work work={work} />,
 	},
 	{ id: 4, text: 'Projects', component: <Projects projects={projects} /> },
 	// { id: 5, text: 'Testimonials', component: <Testimonials /> },
