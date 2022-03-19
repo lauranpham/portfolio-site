@@ -1,23 +1,19 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
+import {useState} from 'react';
+import {links} from './components/data';
+import NavBar from './components/NavBar'
 import './App.css';
 
 function App() {
+  const [selectedPage, setSelectedPage] = useState(0);
+  const SelectedPage = links[selectedPage].component;
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      {/* tabs navigation */}
+      <NavBar links={links} setSelectedPage={setSelectedPage} selectedPage={selectedPage}/>
+      {/* selected page content */}
+      {SelectedPage}
     </div>
   );
 }
