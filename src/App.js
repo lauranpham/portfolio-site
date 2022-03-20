@@ -8,7 +8,7 @@ function App() {
   const SelectedPage = links[selectedPage].component;
   
   useEffect(() => {
-    document.title = "Laura's App"
+    document.title = "Laura | Portfolio Site"
   })
   return (
     <div className="container">
