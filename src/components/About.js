@@ -9,7 +9,7 @@ const About = ({bio, image}) => {
 			</div>
       <div className="content">
         <p>{bio}</p>
-        <img src={image} alt="Profile Photo" />
+        <img src={image} alt="Profile Photo" id="profile-photo" />
       </div>
     </section>
   );

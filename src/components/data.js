@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaBehance, FaGithub, FaLinkedin, FaHome, FaInstagram } from 'react-icons/fa';
+import { FaHome, FaGithub, FaLinkedin, FaYoutube, FaInstagram, FaExternalLinkAlt } from 'react-icons/fa';
 import Intro from './Intro';
 import About from './About';
 import Work from './Work';
@@ -17,17 +17,17 @@ export const projects = [
 			{
 				id: 1,
 				type: 'github',
-				url: '',
-			},
-			{
-				id: 2,
-				type: 'website',
-				url: '',
+				url: 'https://github.com/lauranpham/Sammi',
 			},
 			{
 				id: 3,
 				type: 'youtube',
-				url: '',
+				url: 'https://www.youtube.com/watch?v=uayJ4QoKlVw&t=328s',
+			},
+			{
+				id: 2,
+				type: 'website',
+				url: 'http://sammi.herokuapp.com/',
 			},
 		],
 		languages: ['ruby', 'javascript'],
@@ -39,19 +39,9 @@ export const projects = [
 		desc: `Furreal is an online marketplace to hire your next pet best friend! `,
 		links: [
 			{
-				id: 1,
-				type: 'github',
-				url: '',
-			},
-			{
 				id: 2,
 				type: 'website',
-				url: '',
-			},
-			{
-				id: 3,
-				type: 'youtube',
-				url: '',
+				url: 'http://furreal.herokuapp.com/',
 			},
 		],
 		languages: ['ruby', 'javascript'],
@@ -89,17 +79,12 @@ export const projects = [
 			{
 				id: 1,
 				type: 'github',
-				url: '',
+				url: 'https://github.com/lauranpham/rails-mister-cocktail',
 			},
 			{
 				id: 2,
 				type: 'website',
-				url: '',
-			},
-			{
-				id: 3,
-				type: 'youtube',
-				url: '',
+				url: 'https://mister-cocktail-2311.herokuapp.com/',
 			},
 		],
 		languages: ['react', 'javascript'],
@@ -129,13 +114,13 @@ export const socials = [
 		id: 4,
 		type: 'website',
 		url: '',
-		icon: <FaHome />,
+		icon: <FaExternalLinkAlt />,
 	},
 	{
 		id: 5,
 		type: 'youtube',
 		url: '',
-		icon: <FaHome />,
+		icon: <FaYoutube />,
 	},
 ];
 
@@ -159,7 +144,7 @@ export const work = [
 	{
 		id: 'recIL6mJNfWObonls',
 		order: 2,
-		title: 'Lead Web Developer',
+		title: 'Lead Website Developer',
 		dates: 'June 2020 - December 2020',
 		duties: [
 			`Led web development projects for 100+ ANZ clients from start to finish.`,

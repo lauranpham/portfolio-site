@@ -105,6 +105,9 @@ h3 {
 h4 {
   font-size: 0.875rem;
 }
+h6 {
+  margin-bottom: 0.5rem;
+}
 p {
   margin-bottom: 1.25rem;
   color: var(--clr-grey-5);
@@ -147,19 +150,17 @@ p {
 
 /* section */
 .section {
-  /* width: 90vw; */
   width: 75vw;
-  /* margin: 3rem 2rem; */
+  margin: 0 auto;
   max-width: var(--max-width);
   padding: 2rem;
-  margin: auto;
 }
 
-/* @media screen and (min-width: 992px) {
-  .section {
-    width: 95vw;
+@media screen and (min-width: 576px) {
+  .section.intro {
+    height: 100vh;
   }
-} */
+}
 
 @media screen and (max-width: 576px) {
   .section {
@@ -211,6 +212,9 @@ nav
   justify-content: center;
   /* margin-bottom: 4rem; */
   flex-wrap: wrap;
+  background: var(--clr-grey-1);
+  color: var(--clr-grey-10);
+  padding-bottom: 15px;
 }
 .nav-btn {
   background: transparent;
@@ -218,12 +222,13 @@ nav
   text-transform: capitalize;
   font-size: 0.75rem;
   letter-spacing: var(--spacing);
-  margin: 0 0.5rem;
+  /* margin: 0 0.5rem; */
   transition: var(--transition);
   cursor: pointer;
   padding: 0.25rem 0;
   line-height: 1;
   outline-color: var(--clr-primary-10);
+  color: white;
 }
 .nav-btn:hover {
   color: var(--clr-primary-5);
@@ -234,10 +239,13 @@ nav
   /* box-shadow: 0 2px var(--clr-primary-5); */
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 576px) {
   .nav-btn-container {
     flex-direction: column;
     justify-content: flex-start;
+    height: 100vh;
+    position: sticky;
+    top: 0px;
   }
   .nav-btn {
     /* margin-bottom: 1rem; */
@@ -256,14 +264,24 @@ nav
 .socials-list a {
   color: var(--clr-grey-1);
   margin: 0.5rem;
+  font-size: 30px;
+}
+
+.section.intro {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 /* About */
-.about img {
-  width: 300px;
-    height: 300px;
+#profile-photo {
+  width: 250px;
+    height: 250px;
     object-fit: cover;
     border-radius: 50%;
+    box-shadow: 0px 3px 15px rgb(0 0 0 / 20%);
+    object-position: top;
+    max-width: 100%;
 }
 
 
@@ -336,7 +354,7 @@ Jobs
   color: var(--clr-primary-5);
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 768px) {
   .jobs-center {
     /* width: 90vw; */
     display: grid;
@@ -358,7 +376,7 @@ Jobs
     box-shadow: -2px 0 var(--clr-primary-5);
   }
 }
-.btn {
+.btn, .submit-btn {
   text-transform: uppercase;
   background: var(--clr-primary-5);
   color: var(--clr-primary-9);
@@ -376,13 +394,12 @@ Jobs
   /* width: 12rem; */
   text-align: center;
   margin: 0 auto;
-  margin-top: 3rem;
+  /* margin-top: 3rem; */
+  margin-top: 1rem;
 }
 .btn:hover {
   color: var(--clr-primary-1);
   background: var(--clr-primary-8);
-}
-.center-btn {
 }
 
 /* Projects */
@@ -428,6 +445,7 @@ Jobs
 }
 .project-languages {
   display: flex;
+  flex-wrap: wrap;
 }
 .project-language {
   color: var(--clr-primary-5);
@@ -457,8 +475,7 @@ input {
   border-color: transparent;
   padding: 0.5rem 1rem;
   /* font-size: 1.2rem; */
-  border-top-left-radius: var(--radius);
-  border-bottom-left-radius: var(--radius);
+  border-radius: var(--radius);
   margin-bottom: 0.75rem;
 }
 
@@ -471,6 +488,11 @@ input {
 
 input.error {
   border: 2px solid var(--clr-red-dark);
+  margin-bottom: 0px;
+}
+span.error {
+  color: var(--clr-red-dark);
+  margin-bottom: 0.75rem;
 }
 
 .contact-form {

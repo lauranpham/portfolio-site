@@ -2,12 +2,10 @@ import React from 'react';
 
 const Intro = ({socials}) => {
   return (
-    <section className="section about">
-    <div className="intro">
-      <h1>Hi, I'm Laura</h1>
+    <section className="section intro">
+    <div className="">
+      <h1>Hi, I'm Laura 👋🏼</h1>
       <h4>Full Stack Developer</h4>
-      {/* <div className='underline'></div> */}
-      {/* socials list */}
       <div className="socials-list">
         {socials
         .filter(social => social.url)
