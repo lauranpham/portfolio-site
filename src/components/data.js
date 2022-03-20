@@ -1,9 +1,16 @@
 import React from 'react';
-import { FaHome, FaGithub, FaLinkedin, FaYoutube, FaInstagram, FaExternalLinkAlt } from 'react-icons/fa';
+import {
+	FaHome,
+	FaGithub,
+	FaLinkedin,
+	FaYoutube,
+	FaInstagram,
+	FaExternalLinkAlt,
+} from 'react-icons/fa';
 import Intro from './Intro';
 import About from './About';
 import Work from './Work';
-import Testimonials from './Testimonials';
+// import Testimonials from './Testimonials';
 import Projects from './Projects';
 import Contact from './Contact';
 
@@ -134,9 +141,9 @@ export const work = [
 		title: 'Full Stack Web Developer',
 		dates: 'January 2021 - Present',
 		duties: [
-			`Write clean, testable, and performant code in React, Javascript, Elixir and PHP within an Agile and TDD environment.`,
 			`Delivered 4 core product features and REST API upgrades that significantly improved users' overall platform experience and feature usage.`,
-			`Actively contribute and collaborate in cross-functional teams to drive product/design, customer, and testing-informed development.`,
+			`Write clean, testable, and performant code in React, Javascript, Elixir and PHP within an Agile and TDD environment.`,
+			`Collaborate in cross-functional teams to drive product/design, customer, and testing-informed development.`,
 			`Engage in the full development life cycle of new features including analysis, design, implementation, testing and deployment.`,
 		],
 		company: 'IntelligenceBank',
@@ -158,10 +165,21 @@ export const work = [
 		title: 'Full Stack Developer',
 		dates: 'Feb 2020 - May 2020',
 		duties: [
-			`Managed the Front End Development and UI/UX of the LearnerShape platform using Javascript, JQuery, JSON, AJAX, Ruby on Rails, Python,
+			`Contributed to the Front End Development and UI/UX of the LearnerShape platform using Javascript, JQuery, JSON, AJAX, Ruby on Rails, Python,
 			HTML & CSS.`,
 		],
 		company: 'LearnerShape',
+	},
+	{
+		id: 'rec61x18GVY99hQq6',
+		order: 4,
+		title: 'Teaching Assistant',
+		dates: 'Jan 2020 - Feb 2020',
+		duties: [
+			`Supported students to understand and solve coding challenges as part of the Le Wagon Full-Stack Web Development Bootcamp (Ruby, RoR, SQL, JS, HTML, CSS).`,
+			`Delivered coding workshops to 30+ attendees on a range of topics including Git & GitHub`,
+		],
+		company: 'Le Wagon',
 	},
 ];
 
@@ -199,7 +217,7 @@ export const testimonials = [
 ];
 
 export const links = [
-	{ id: 1, text: <FaHome/>, component: <Intro socials={socials} /> },
+	{ id: 1, text: <FaHome />, component: <Intro socials={socials} /> },
 	{
 		id: 2,
 		text: 'About',
@@ -212,5 +230,5 @@ export const links = [
 	},
 	{ id: 4, text: 'Projects', component: <Projects projects={projects} /> },
 	// { id: 5, text: 'Testimonials', component: <Testimonials /> },
-	{ id: 6, text: 'Contact', component: <Contact /> }
+	{ id: 6, text: 'Contact', component: <Contact /> },
 ];

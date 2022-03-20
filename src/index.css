@@ -125,9 +125,9 @@ p {
   h4 {
     font-size: 1rem;
   }
-  body {
+  /* body {
     font-size: 1rem;
-  }
+  } */
   h1,
   h2,
   h3,
@@ -261,10 +261,27 @@ nav
 
 /* Intro */
 
+.wave {
+  display:inline-block;
+  cursor: pointer;
+}
+.wave:hover {
+  transition: 0.2s all ease-out;
+  -webkit-transform: rotate(25deg); 
+  -moz-transform: rotate(25deg);    
+  transform:rotate(25deg);
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
+
 .socials-list a {
   color: var(--clr-grey-1);
   margin: 0.5rem;
   font-size: 30px;
+}
+
+.socials-list a svg:hover {
+  transform: scale(1.2);
+  transition: 0.2s all ease-out;
 }
 
 .section.intro {
@@ -344,7 +361,7 @@ Jobs
   grid-template-columns: auto 1fr;
   column-gap: 2rem;
   align-items: center;
-  margin-bottom: 1.25rem;
+  margin-bottom: 1rem;
 }
 .job-desc p {
   margin-bottom: 0;

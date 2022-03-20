@@ -1,4 +1,3 @@
-// import logo from './logo.svg';
 import {useState, useEffect} from 'react';
 import {links} from './components/data';
 import NavBar from './components/NavBar'
@@ -13,9 +12,9 @@ function App() {
   })
   return (
     <div className="container">
-      {/* tabs navigation */}
+      {/* Tabs navigation */}
       <NavBar links={links} setSelectedPage={setSelectedPage} selectedPage={selectedPage}/>
-      {/* selected page content */}
+      {/* Selected page content */}
       {SelectedPage}
     </div>
   );
