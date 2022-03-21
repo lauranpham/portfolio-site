@@ -165,7 +165,7 @@ export const work = [
 		title: 'Full Stack Developer',
 		dates: 'Feb 2020 - May 2020',
 		duties: [
-			`Contributed to the Front End Development and UI/UX of the LearnerShape platform using Javascript, JQuery, JSON, AJAX, Ruby on Rails, Python,
+			`Developed the Front End and UI/UX of the LearnerShape platform using Javascript, JQuery, JSON, AJAX, Ruby on Rails, Python,
 			HTML & CSS.`,
 		],
 		company: 'LearnerShape',
