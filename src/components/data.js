@@ -7,12 +7,12 @@ import {
 	FaInstagram,
 	FaExternalLinkAlt,
 } from 'react-icons/fa';
-import Intro from './Intro';
-import About from './About';
-import Work from './Work';
+import Intro from '../pages/Intro';
+import About from '../pages/About';
+import Work from '../pages/Work';
 // import Testimonials from './Testimonials';
-import Projects from './Projects';
-import Contact from './Contact';
+import Projects from '../pages/Projects';
+import Contact from '../pages/Contact';
 
 export const projects = [
 	{
