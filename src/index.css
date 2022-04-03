@@ -519,3 +519,18 @@ span.error {
     width:100%;
     margin: auto;
 }
+
+.alert {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding: 5px;
+  display: grid;
+  align-items: center;
+  text-align: center;
+  font-size: 0.7rem;
+  border-radius: 0.25rem;
+  letter-spacing: var(--spacing);
+  text-transform: capitalize;
+  color: #155724;
+  background: #d4edda;
+}
